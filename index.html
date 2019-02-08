@@ -1,0 +1,97 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #ffeead;
+}
+
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  background-color: #ffeead;
+  height: 100%;
+  padding: 10px;
+  margin: 0px;
+}
+
+.container > div:nth-child(1n) {
+  background-color: #96ceb4;
+}
+
+.container > div:nth-child(3n) {
+  background-color: #88d8b0;
+}
+
+.container > div:nth-child(2n) {
+  background-color: #ff6f69;
+}
+
+.container > div:nth-child(4n) {
+  background-color: #ffcc5c;
+}
+
+.container {
+  border: 1px solid black;
+  height: 100%;
+  display:grid;
+  grid-gap:1px;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(6, 100px);
+  justify-content: center;
+  align-content: center;
+}
+
+.button_calc {
+  background-color: #efefef;
+}
+
+.display{
+  grid-column-start: 1;
+  grid-column-end: 5; /* -1 would be last column line */
+}
+
+</style>
+</head>
+<body>
+<!--
+ctrl shift L : delete line
+-->
+<div class="container">
+    <div class="display">display</div>
+    <div class="button_calc">C</div>
+    <div class="button_calc">div</div>
+    <div class="button_calc">x</div>
+    <div class="button_calc">back</div>
+    <div class="button_calc">7</div>
+    <div class="button_calc">8</div>
+    <div class="button_calc">9</div>
+    <div class="button_calc">m</div>
+    <div class="button_calc">4</div>
+    <div class="button_calc">5</div>
+    <div class="button_calc">6</div>
+    <div class="button_calc">p</div>
+    <div class="button_calc">1</div>
+    <div class="button_calc">2</div>
+    <div class="button_calc">3</div>
+    <div class="button_calc">()</div>
+    <div class="button_calc">0</div>
+    <div class="button_calc">,</div>
+    <div class="button_calc">p/m</div>
+    <div class="button_calc">=</div>
+</div>
+
+
+</body>
+</html>
